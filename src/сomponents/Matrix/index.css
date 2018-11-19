@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+.cube {
+  position: relative;
+  border: 1px solid #48aae6;
+  padding: 1px;
+  width: auto;
+  display: inline-block;
+}
+
+.container1 {
+  margin: 60px;
+}
+
+.container {
+  margin: 60px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.cell {
+  background: #48aae6;
+  border: 1px solid #fff;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition:opacity .5s linear;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+}
+
+.del{
+  background:#b20000;
+}
+
+.del::before {
+  content: "-";
+}
+
+.del:hover{
+  opacity: .4;
+}
+
+.add::before {
+  content: "+";
+}
+
+.add {
+  background:#f3a500;
+}
+
+.add:hover{
+  opacity: .4;
+}
+
+.add__cell {
+  top: 2px;
+  right: -52px;
+}
+
+.add__row {
+  bottom: -52px;
+  left: 2px;
+}
+
+.del__cell {
+  top: -52px;
+  left: 2px;
+}
+
+.del__row {
+  top: 2px;
+  left: -52px;
+}
